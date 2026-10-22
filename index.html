@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="stars"></div>
+
+    <header class="topbar">
+      <div class="brand">Planet Explorer</div>
+      <nav>
+        <button class="nav-btn active" data-target="earth">Earth</button>
+        <button class="nav-btn" data-target="mars">Mars</button>
+        <button class="nav-btn" data-target="jupiter">Jupiter</button>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="planet-panel">
+        <div class="planet-visual">
+          <div class="planet planet-earth active" id="planet-earth"></div>
+          <div class="planet planet-mars" id="planet-mars"></div>
+          <div class="planet planet-jupiter" id="planet-jupiter"></div>
+        </div>
+      </section>
+
+      <section class="info-panel">
+        <p class="eyebrow">Solar System Spotlight</p>
+        <h1 id="planet-name">Earth</h1>
+        <p id="planet-description">
+          Earth is the only known planet with liquid water on the surface and life as we
+          know it.
+        </p>
+
+        <div class="facts">
+          <div class="fact-card">
+            <span class="label">Distance</span>
+            <strong id="fact-distance">149.6 million km</strong>
+          </div>
+          <div class="fact-card">
+            <span class="label">Day Length</span>
+            <strong id="fact-day">24 hours</strong>
+          </div>
+          <div class="fact-card">
+            <span class="label">Fun Fact</span>
+            <strong id="fact-fun">Home to humans</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="explore">
+      <h2>Explore more</h2>
+      <div class="cards">
+        <article class="mini-card">
+          <span class="mini-tag">Moon</span>
+          <h3>Our constant companion</h3>
+          <p>Earth’s moon helps stabilize our planet's tilt and influences tides.</p>
+        </article>
+        <article class="mini-card">
+          <span class="mini-tag">Atmosphere</span>
+          <h3>Protective shield</h3>
+          <p>A rich atmosphere filters harmful radiation and keeps temperatures stable.</p>
+        </article>
+        <article class="mini-card">
+          <span class="mini-tag">Life</span>
+          <h3>One world, many ecosystems</h3>
+          <p>From oceans to forests, Earth supports life in incredible variety.</p>
+        </article>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
